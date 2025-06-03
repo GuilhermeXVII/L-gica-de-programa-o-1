@@ -1,1 +1,25 @@
-
+<html>
+<meta charset = "utf-8">
+<script>
+    function pularLinha(){
+      document.write("<br><br>");
+    }
+    function mostra(frase){
+      document.write(frase);
+      pularLinha();
+    }
+    var numeroPensado = 4; 
+    var tentativas = 1;
+    while(tentativas <= 3){
+        var chute = parseInt(prompt("Entre com o seu chute!")); // Corrigido aqui
+        if(chute == numeroPensado){
+            mostra("Parabéns, você acertou!");
+            break;
+        }else{
+            mostra("Você errou!");
+        }
+        tentativas++;
+    }
+    mostra("Fim");
+</script>
+</html>
