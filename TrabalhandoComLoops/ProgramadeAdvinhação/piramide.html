@@ -1,0 +1,37 @@
+<html>
+	<meta charset = "UTF-8">
+	<script>
+		
+		document.write("Aqui está ela com o laço FOR:");
+		document.write("<br><hr><br>");
+		
+		for(var linha = 1; linha <= 10; linha +=1){
+			for(var coluna = 1; coluna <= linha; coluna++){
+				document.write("*");
+			}
+			
+			document.write("<br>");
+		}
+		
+		document.write("<br><hr><br>");
+		document.write("Aqui está ela com o laço WHILE:");
+		document.write("<br><hr><br>");
+		
+		var linha = 1;
+		while(linha <= 10){
+		
+			linha++;
+			var coluna = 2;
+			while(coluna <= linha){
+				coluna++;
+				document.write("*");
+				
+			}
+			document.write("<br>");
+			
+		}
+		
+		
+		
+	</script>
+</html>
