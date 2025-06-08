@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pedra papel tesoura</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header><h1>Pedra, Papel ou Tesoura</h1></header>
+        <input class = "botoes" type="text"/>
+        <button class = "botoes">Enviar escolha</button>
+        <script>
+		
+		//Criando funções inicias pularLinha(); e texto()
+		//A função pularLinha foi implementada dentro da função texto
+		
+            function pularLinha(){
+                document.write("<br><hr><br>");
+
+            }
+
+            function texto(frase){
+                document.write(frase);
+                pularLinha();
+            }
+			
+			//alert("Ao digitar o seu chute, insira a palavra da maneira correta!");
+			
+			//Pegando a entrada do usuário com document.querySelector
+			//Colocando o focus no escolhaUsuario
+			//Ele fica piscando quando o colocamos
+			
+            var escolhaUsuario = document.querySelector("input");
+            escolhaUsuario.focus();
+			
+			//Criando o nosso array chamado escolhaComputador 
+			
+            const escolhaComputador = ["Pedra", "Papel", "Tesoura"];
+			
+			//Criando a posicaoIndice para ela ler o nosso array 
+			//Criando um const para ler tudo com o escolhaComputador[posicaoIndice]
+			
+            const posicaoIndice = Math.floor(Math.random()* escolhaComputador.length);
+            const escolhaPCfinal = escolhaComputador[posicaoIndice];
+            texto(escolhaPCfinal);
+			
+			
+			//Criando a função chamada compararEscolhas é ir fazendo as condicionais dentro dela
+			
+            function compararEscolhas(){
+                if(escolhaUsuario.value == escolhaPCfinal){
+                    document.write("Parabéns, você ganhou!");
+
+                }else{
+					texto("Lamento, tente novamente!");
+				}   
+				
+            }
+			
+			//Criando o botão de saida é colocando ele para executar ao usuário clicar para chamar a função compararEscolhas()
+			
+			var botao = document.querySelector("button");
+			botao.onclick = compararEscolhas;
+			
+        </script>
+		<p>Clique <a href="lista2.html">Aqui</a> para saber mais!!</p>
+    </body>
+</html>
