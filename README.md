@@ -20,6 +20,6 @@ Bem-vindo(a)! Este repositório contém alguns exercícios simples que fiz enqua
 
 ## 🚀 Objetivo
 
-Esse repositório serve tanto como portfólio pessoal quanto como referência para quem também está começando. Com o tempo, vou atualizando com novos exemplos e projetos.
+Esse repositório serve tanto como portfólio pessoal quanto como referência(É o que eu acho, pelo menos isso kkkkkkk) para quem também está começando. Com o tempo, vou atualizando com novos exemplos e projetos.
 
 ---
