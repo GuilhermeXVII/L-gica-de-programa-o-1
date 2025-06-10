@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+	<title>Contador decresente</title>
+</head>
+<body>
+    <h1>Contador decresente</h1>
+    <script>
+        function puladorLinha() {
+            document.write("<br>");
+        }
 
+        function frase(texto) {
+            document.write(texto);
+            puladorLinha();
+        }
+
+        var numeroUsuario = parseInt(prompt("Digite um número para contar de forma decrescente:"));
+		
+		function contarDecresente(x){
+			if(0 <= x){
+				while(0 <=x){
+					frase("Aqui está a ordem descresente do seu número: " + x);
+					x = x - 1;
+				}
+			}else{
+				while(x <= 0){
+					frase("Aqui está a ordem descresente do seu número: " + x);
+					x = x + 1;
+				}
+			}
+		}
+		var parFinal = contarDecresente(numeroUsuario);
+    </script>
+</body>
+</html>
